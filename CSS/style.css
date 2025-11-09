@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -18,6 +19,11 @@ h2 {
     line-height: 120%;
     letter-spacing: 0.17em;
 }
+
+p {
+    font-size: 14px;
+}
+
 a {
     transition: opacity 0.3s;
 }
@@ -94,11 +100,10 @@ a:hover {
     font-size: 16px;
     line-height: 131%;
     letter-spacing: 0.12em;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .registration__a2 {
-    margin-left: 10px;
 
     border-color: black;
 
@@ -164,8 +169,6 @@ a:hover {
 }
 
 .lessons__p1 {
-    /* margin-bottom: 23px; */
-    font-size: 14px;
     line-height: 179%;
     color: #6a859c;
 }
@@ -201,8 +204,7 @@ a:hover {
 }
 
 .services__img {
-    max-width: 430px;
-    max-height: 287px;
+    max-width: 287px;
 }
 
 .services__bloc {}
@@ -216,7 +218,6 @@ a:hover {
 
 .services__p {
     max-width: 395px;
-    font-size: 14px;
     line-height: 179%;
     color: #fff;
     text-transform: none;
@@ -244,10 +245,10 @@ a:hover {
     line-height: 118%;
     letter-spacing: 0.18em;
     color: #8e8e9c;
+    margin-bottom: 62px;
 }
 
 .block {
-    margin-top: 62px;
     padding: 12px 0px;
     margin-bottom: 40px;
 }
@@ -261,7 +262,7 @@ a:hover {
 }
 
 .tabSection__img {
-    height: 627px;
+    max-width: 627px;
 }
 
 .descriptio {}
@@ -275,7 +276,6 @@ a:hover {
 }
 
 .descriptio__p {
-    font-size: 13px;
     line-height: 192%;
     color: #6a859c;
     text-transform: none;
@@ -284,6 +284,7 @@ a:hover {
 /* ----------main__contact--------- */
 .contact {
     text-align: left;
+    margin-bottom: 35px;
 }
 
 .contact__grid {
@@ -305,7 +306,6 @@ a:hover {
 .contact__p {
     padding-top: 25px;
     text-transform: none;
-    font-size: 14px;
     line-height: 179%;
     color: #6a859c;
 }
@@ -333,7 +333,7 @@ a:hover {
 }
 
 .contact__hr {
-    width: 300px;
+    max-width: 300px;
     height: 1px;
     background: #D5D5E0;
 }
@@ -354,7 +354,6 @@ a:hover {
 
 /* ----------footer--------- */
 footer {
-    margin-top: 35px;
     background-color: #383838;
     color: #9E9E9E;
     padding: 40px 0px;
@@ -362,4 +361,101 @@ footer {
     font-size: 15px;
     line-height: 133%;
     text-transform: none;
+}
+
+@media (max-width: 768px) {
+    .contener {
+        max-width: 600px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .tabSection__p {
+        margin-bottom: 50px;
+    }
+
+    .contact a {
+        font-size: 9px;
+    }
+
+    .contact__h3 {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contener {
+        max-width: 375px;
+    }
+
+    .lessons__blocs {
+        grid-template-columns: 1fr;
+    }
+
+    .services__blocs {
+        grid-template-columns: 1fr;
+    }
+
+    .border {
+        padding: 0px 10px;
+        padding-bottom: 13px;
+        padding-top: 26px;
+    }
+
+    .tabSection__img {
+        max-width: 375px;
+    }
+
+    .contact {
+        padding-right: 20px;
+    }
+
+    .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .lessons {
+        padding: 20px 0px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .contener {
+        max-width: 320px;
+    }
+
+    .tabSection__img {
+        max-width: 320px;
+    }
+
+    .registration__div-butten {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .registration__a1 {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    html{
+        max-width: 320px
+    }
+    .contener {
+        max-width: 280px;
+    }
+
+    .tabSection__img {
+        max-width: 270px;
+    }
 }
